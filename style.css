@@ -7,6 +7,7 @@
 
   --dark-bg: var(--color-dark);
   --dark-text-color: white;
+  --shadow: 4px -2px 40px 9px rgba(92, 92, 92, 0.685);
 }
 html {
   /* scroll-behavior: smooth; */
@@ -22,6 +23,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
+  max-width: 1400px;
 }
 
 .flex {
@@ -70,7 +72,7 @@ a {
 
 /* <!-- nav bar --> */
 header {
-  box-shadow: 4px -2px 40px 9px rgba(92, 92, 92, 0.685);
+  box-shadow: var(--shadow);
   position: sticky;
   top: 0;
   background: var(--body-bg);
@@ -124,6 +126,51 @@ header .header {
 
 /* <!-- hero section--> */
 
+.hero-section {
+  margin-top: 40px;
+  max-height: 60vh;
+}
+
+.hero {
+  background: var(--color-orange);
+  grid-template-areas: "left right";
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.left {
+  grid-area: left;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10vh;
+}
+.left div span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.left .tag {
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.left button {
+  background: var(--dark-bg);
+  color: var(--dark-text-color);
+  padding: 0.8rem 2 rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.right {
+  grid-area: right;
+  justify-content: flex-end;
+  align-items: left;
+  margin-top: -8rem;
+}
+
+.right img {
+  height: 115%;
+}
 /* <!-- banner section  --> */
 
 /* <!-- skills section --> */
