@@ -4,6 +4,9 @@
   --color-orange: orangered;
   --color-dark: #2a2a2a;
   --text-color: var(--color-dark);
+
+  --dark-bg: var(--color-dark);
+  --dark-text-color: white;
 }
 html {
   /* scroll-behavior: smooth; */
@@ -52,6 +55,19 @@ a {
 }
 /* <!-- dark mode toggler  --> */
 
+[for="darkMode"] {
+  position: fixed;
+  top: 7rem;
+  left: 3rem;
+}
+
+[for="darkMode"]:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: all 0.3s;
+  color: rgb(44, 11, 21);
+}
+
 /* <!-- nav bar --> */
 header {
   box-shadow: 4px -2px 40px 9px rgba(92, 92, 92, 0.685);
@@ -94,6 +110,18 @@ header .header {
   color: var(--color-orange);
   transition: all 0.3s;
 }
+
+/* Applying dark mode feature    */
+
+#darkMode:checked + .wrapper {
+  --body-bg: var(--dark-bg);
+  color: var(--dark-text-color);
+}
+
+#darkMode {
+  display: none;
+}
+
 /* <!-- hero section--> */
 
 /* <!-- banner section  --> */
