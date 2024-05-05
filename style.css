@@ -1,5 +1,6 @@
 :root {
   --body-bg: rgba(170, 223, 248, 0.959);
+  --border-color: var(--color-dark);
 
   --color-orange: orangered;
   --color-dark: #2a2a2a;
@@ -7,6 +8,8 @@
 
   --dark-bg: var(--color-dark);
   --dark-text-color: white;
+  --dark-border-color: white;
+
   --shadow: 4px -2px 40px 9px rgba(92, 92, 92, 0.685);
 }
 html {
@@ -87,7 +90,7 @@ header .header {
   font-size: 1.3rem;
   position: relative;
 }
-.logo:first-child {
+.logo :first-child {
   font-weight: bold;
   margin-right: 1rem;
 
@@ -101,7 +104,7 @@ header .header {
   width: 4px;
   height: 100%;
   position: absolute;
-  left: 22%;
+  left: 25%;
 }
 
 .navigation {
@@ -118,6 +121,7 @@ header .header {
 #darkMode:checked + .wrapper {
   --body-bg: var(--dark-bg);
   color: var(--dark-text-color);
+  --border-color: var(--dark-border-color);
 }
 
 #darkMode {
@@ -128,7 +132,7 @@ header .header {
 
 .hero-section {
   margin-top: 40px;
-  max-height: 60vh;
+  max-height: 80vh;
 }
 
 .hero {
@@ -156,6 +160,7 @@ header .header {
 .left button {
   background: var(--dark-bg);
   color: var(--dark-text-color);
+  height: 2rem;
   padding: 0.8rem 2 rem;
   border: none;
   border-radius: 10px;
@@ -173,6 +178,41 @@ header .header {
 }
 /* <!-- banner section  --> */
 
+.banner {
+  margin-top: 7rem;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  border-radius: 50px;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info-divider {
+  background: grey;
+  width: 2px;
+  height: 70px;
+}
+.info-content .icon-container {
+  background: var(--color-orange);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: white;
+}
+
+.info-content div span {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+}
+
+.info-content div p {
+  color: var(--color-orange);
+}
 /* <!-- skills section --> */
 
 /* <!-- project section  --> */
