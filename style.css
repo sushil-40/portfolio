@@ -241,7 +241,53 @@ header .header {
 }
 /* <!-- project section  --> */
 
+.projects {
+  margin-top: 5rem;
+}
+
+.projects .project-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects .project-card {
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  padding-bottom: 3rem;
+}
+
+.project-card .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
 /* <!-- about me section  --> */
+.about {
+  margin-top: 5rem;
+  background: rgba(136, 231, 81, 0.575);
+  padding: 7rem;
+}
+.about .myImg {
+  width: 40%;
+}
+
+.my-bio h2 {
+  letter-spacing: 5px;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about .my-bio p:nth-child(4),
+.my-bio .tag {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.my-bio .tag + div > span {
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  background: grey;
+}
 
 /* <!-- contact section  --> */
 
