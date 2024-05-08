@@ -298,6 +298,42 @@ header .header {
 
 /* <!-- contact section  --> */
 
+.contact {
+  padding-top: 7rem 0;
+  margin: auto;
+  margin-top: 5rem;
+  width: 400px;
+}
+
+.contact .social {
+  font-size: 4rem;
+  justify-content: space-between;
+}
+
+.contact h3 {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.contact .email-section {
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+
+  gap: 3rem;
+  box-shadow: var(--shadow);
+}
+.contact .email-section span {
+  font-size: 1.5rem;
+}
+.contact .email-icon {
+  background: var(--color-orange);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
 /* <!-- footer section  --> */
 
 footer {
@@ -305,4 +341,23 @@ footer {
   background: #000;
   color: white;
   margin-top: 5rem;
+  flex-direction: column;
+}
+
+footer .top {
+  margin-bottom: 5rem;
+  gap: 5rem;
+}
+
+footer .top ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+footer .top ul li {
+  line-height: 1.5rem;
+}
+
+footer .bottom {
+  margin-bottom: 1.5rem;
 }
