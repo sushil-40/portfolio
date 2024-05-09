@@ -361,3 +361,17 @@ footer .top ul li {
 footer .bottom {
   margin-bottom: 1.5rem;
 }
+
+/* go up  */
+
+.goUp {
+  font-size: 3rem;
+  background: var(--color-orange);
+  padding: 0.3rem;
+
+  border-radius: 50%;
+
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+}
