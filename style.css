@@ -382,6 +382,7 @@ footer .bottom {
 }
 #hamburgerMenu {
   display: none;
+  overflow-x: hidden;
 }
 [for="hamburgerMenu"] {
   display: none;
