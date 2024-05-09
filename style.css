@@ -66,6 +66,7 @@ a {
 .wrapper {
   background: var(--body-bg);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 /* <!-- dark mode toggler  --> */
 
@@ -406,6 +407,7 @@ footer .bottom {
     left: 100vw;
     transition: all 0.5s;
   }
+
   .menu .navigation {
     flex-direction: column;
     font-size: 1.3rem;
