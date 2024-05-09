@@ -34,6 +34,7 @@
       <label for="darkMode">
         <i class="fa-solid fa-circle-half-stroke"></i>
       </label>
+
       <!-- nav bar -->
 
       <header>
@@ -42,20 +43,24 @@
             <div>Sushil</div>
             <div class="line">Software Developer</div>
           </div>
+          <label for="hamburgerMenu"><i class="fa-solid fa-bars"></i></label>
+
+          <input type="checkbox" id="hamburgerMenu" />
+
           <div class="menu">
             <ul class="flex navigation">
-              <li><a href="">Home</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
       </header>
       <!-- hero section-->
 
-      <section class="hero-section container">
+      <section class="hero-section container" id="hero">
         <div class="grid hero">
           <div class="left flex">
             <div>Hi I'm <span>Sushil Dangoriya</span></div>
@@ -111,7 +116,7 @@
 
       <!-- skills section -->
 
-      <div class="skills">
+      <div class="skills" id="skills">
         <h2 class="title">
           <span>Skills</span>
         </h2>
@@ -140,7 +145,7 @@
 
       <!-- project section  -->
 
-      <section class="projects container">
+      <section class="projects container" id="projects">
         <h2 class="title">
           <span> My Projects </span>
         </h2>
@@ -203,7 +208,7 @@
 
       <!-- about me section  -->
 
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="title">
           <span>About Me</span>
         </h2>
@@ -239,7 +244,7 @@
 
       <!-- contact section  -->
 
-      <section class="contact container">
+      <section class="contact container" id="contact">
         <h2 class="title">
           <span>Contact</span>
         </h2>
@@ -267,10 +272,10 @@
           <div class="links">
             <h3>Links</h3>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <div class="socials">
@@ -287,8 +292,10 @@
           &copy; Copy right all reserved 2024 || Made by me with 🚀
         </div>
       </footer>
-      <a href="" class="goUp">
-        <i class="fa-solid fa-chevron-up"></i>
+      <a href="#hero">
+        <div class="goUp flex-center">
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
       </a>
     </div>
   </body>

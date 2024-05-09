@@ -13,7 +13,7 @@
   --shadow: 4px -2px 40px 9px rgba(92, 92, 92, 0.685);
 }
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 * {
@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 .container {
   width: 80%;
@@ -141,6 +142,7 @@ header .header {
 .hero-section {
   margin-top: 40px;
   max-height: 80vh;
+  padding-top: 2rem;
 }
 
 .hero {
@@ -265,7 +267,7 @@ header .header {
 .about {
   margin-top: 5rem;
   background: rgba(136, 231, 81, 0.575);
-  padding: 7rem;
+  padding: 7rem 0;
 }
 .about .myImg {
   width: 40%;
@@ -367,11 +369,94 @@ footer .bottom {
 .goUp {
   font-size: 3rem;
   background: var(--color-orange);
-  padding: 0.3rem;
+
+  width: 70px;
+  height: 70px;
 
   border-radius: 50%;
 
   position: fixed;
   right: 20px;
   bottom: 60px;
+}
+#hamburgerMenu {
+  display: none;
+}
+[for="hamburgerMenu"] {
+  display: none;
+}
+
+/* media query  */
+
+@media (max-width: 768px) {
+  [for="hamburgerMenu"] {
+    cursor: pointer;
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: var(--body-bg);
+
+    width: 250px;
+    height: 100vh;
+    top: 3.7rem;
+
+    box-shadow: var(--shadow);
+
+    left: 100vw;
+    transition: all 0.5s;
+  }
+  .menu .navigation {
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
+
+  .menu .navigation li {
+    line-height: 2.5rem;
+  }
+
+  #hamburgerMenu:checked + .menu {
+    left: calc(100vw-250px);
+  }
+
+  /* hero  */
+
+  .hero {
+    grid-template-areas:
+      "right"
+      "left";
+  }
+  .hero .rigth {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .hero .right img {
+    width: 80%;
+  }
+  /* banner  */
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .info-divider {
+    display: none;
+  }
+
+  /* projects  */
+
+  .projects .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* about  */
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .myImg {
+    width: 100%;
+  }
 }
