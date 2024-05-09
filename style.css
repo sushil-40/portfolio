@@ -416,7 +416,7 @@ footer .bottom {
   }
 
   #hamburgerMenu:checked + .menu {
-    left: calc(100vw-250px);
+    left: calc(65vw);
   }
 
   /* hero  */
